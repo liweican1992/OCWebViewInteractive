@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+        
+        
+        <script type="text/javascript">
+        
+        function app_cc412_JSAction_userId(userid){
+                alert("Hello! " + userid + " 报名成功!");
+        }
+        function app_cc412_JSAction_userId_tag(userid,tag)
+        {
+            alert("Hello " + "userid=" +userid + "点击按钮的tag:="+tag);
+        }
+        </script>
+    </head>
+
+    <body>
+        <h1>WebViewDemo</h1>
+        
+        <li>
+            <a>点击图片从H5获取商品ID 跳转App界面</a><br/>
+            <a href="app-cc412:goodsId=3254">
+                <img src="http://www.ssrj.com/upload/image/201705/7162b144-b6ac-4577-9e97-6ba945cf5b6f-medium.png"/>
+            </a>
+        </li>
+        
+        <li>
+            <a></a>获取本地用户ID 再调用JS函数 类似报名功能 适用一个界面只有一个按钮<br/>
+            <a href="app-userid-cc412:userId">点击报名活动</a><br/>
+        </li>
+        
+        <li>
+            <p>OC拦截后 拿到用户 ID调用JS函数 可以根据按钮Tag 区分不同按钮</p>
+            
+            <a href="app-userid-cc412-tag:tag=1">点击报名活动1</a><br/>
+            <a href="app-userid-cc412-tag:tag=2">点击报名活动2</a><br/>
+
+        </li>
+    </body>
+</html>
